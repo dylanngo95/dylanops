@@ -1,0 +1,40 @@
+{
+    "name": "portfolio",
+    "version": "1.0.0",
+    "description": "portoflio",
+    "scripts": {
+        "devOld": "next dev",
+        "dev": "next dev",
+        "build": "NODE_ENV=production next build",
+        "start": "next start",
+        "export": "next export"
+    },
+    "author": "Par Bhatia",
+    "license": "ISC",
+    "engines": {
+        "node": "14.16.1",
+        "npm": "7.11.2"
+    },
+    "dependencies": {
+        "@georgedrpg/pannellum-react-next": "^1.2.5",
+        "@mdx-js/loader": "^1.6.22",
+        "@mdx-js/react": "^1.6.22",
+        "@next/mdx": "^10.2.0",
+        "file-saver": "^2.0.5",
+        "gray-matter": "^4.0.3",
+        "next": "^11.1.2",
+        "next-mdx-remote": "^3.0.1",
+        "nprogress": "^0.2.0",
+        "prism-react-renderer": "^1.2.0",
+        "react": "^17.0.2",
+        "react-dom": "^17.0.2",
+        "sass": "^1.33.0"
+    },
+    "devDependencies": {
+        "@svgr/webpack": "^5.5.0",
+        "@types/react": "^17.0.19",
+        "next-secure-headers": "^2.2.0",
+        "prop-types": "^15.7.2",
+        "typescript": "^4.3.5"
+    }
+}

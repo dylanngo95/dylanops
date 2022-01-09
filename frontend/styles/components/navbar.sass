@@ -1,0 +1,44 @@
+@use '../utils' as u
+
+header
+    +u.flexCenter
+    justify-content: space-evenly
+    flex-wrap: wrap
+    flex-shrink: 0
+    // padding: var(--space-sm)
+    color: var(--color-text)
+    @include lt-md
+        +u.flexCenter(column)
+        justify-content: center
+
+.navbar_items
+    +u.flexCenter
+    flex-wrap: wrap
+    @include lt-md
+        font-size: var(--text-md)
+
+.navbar_logo
+    padding-top: var(--space-sm)
+    +u.flexCenter
+
+.navbar_item
+    color: var(--color-text)
+    +u.flexCenter
+
+.navbar_link
+    display: flex
+    align-items: center
+    padding: var(--space-sm)
+    justify-content: center
+    border: 1px solid transparent
+    border-radius: var(--btn-radius)
+    &:hover
+        border: 1px solid var(--color-primary)
+
+a.navbar_link
+    padding: var(--space-xxxs)
+    margin: var(--space-xxxs)
+    color: var(--color-text)
+
+a.navbar_link_selected
+    border: 1px solid var(--color-primary)

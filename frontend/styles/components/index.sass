@@ -1,0 +1,16 @@
+@use '../utils' as u
+
+.company_logo_url
+    width: 100%
+
+.occupation
+    @include gt-sm
+        +u.flexCenter
+    nav
+        a
+            color: rgb(240,146,50)
+            &:hover
+                border: 1px solid rgb(240,146,50)
+
+.intro_line
+    margin-top: 0

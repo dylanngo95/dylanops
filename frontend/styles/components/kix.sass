@@ -1,0 +1,34 @@
+@use '../utils' as u
+
+.kix
+    display: flex
+    flex-direction: column
+    width: 100%
+
+.kix_info
+    margin-top: var(--space-sm)
+    margin-bottom: var(--space-sm)
+
+.kix_nav
+    +u.flexCenter()
+    justify-content: space-between
+    font-size: var(--text-sm)
+    // > .btn
+    //     > .button_span
+    //         > svg
+    //             margin: 0
+
+.kix_nav button .button_span svg
+    margin: 0
+
+.kix_nav_item
+    +u.flexCenter()
+    justify-content: space-between
+
+.kix_right_margin_label
+    margin-right: var(--space-xxxs)
+
+.kix_right_margin_label
+    margin-right: var(--space-xxxs)
+.kix_left_margin_label
+    margin-left: var(--space-xxxs)

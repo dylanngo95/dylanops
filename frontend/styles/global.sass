@@ -1,0 +1,104 @@
+@use 'utils' as u
+
+body
+    margin: 0
+    padding: 0
+    font-size: var(--text-base-size)
+    font-family: var(--font-primary)
+    font-weight: 500
+    color: var(--color-text)
+    background: var(--bg-primary)
+
+.component
+    display: flex
+    flex-direction: column
+    transition: all 200ms
+    // transition: all 200ms ease-in-out
+    justify-content: flex-start
+    align-items: center
+    width: 100%
+
+/*used to expand component when not on home page*/
+.flex-grow-component
+    flex-grow: 1
+    max-height: min-content
+
+.pageLayout
+    width: 100%
+    max-width: 1000px
+
+.app
+    +u.flexCenter(column)
+    min-height: 100vh
+    animation-duration: 100ms
+    animation-name: appEnterAnimation
+    animation-timing-function: ease-in
+
+article
+    h2, h3, h4
+        margin-top: var(--space-sm)
+
+    ul, ol, p
+        margin-bottom: var(--space-md)
+
+h1, h2, h3, h4, h5, form legend
+    color: var(--color-text-heading)
+    margin-bottom: 0
+    margin-top: 0
+    line-height: var(--heading-line-height)
+
+a
+    text-decoration: none
+    color: var(--color-link)
+
+    &:visited
+        color: var(--color-link-visited)
+
+/* text sizes */
+.text--xxxl
+    font-size: var(--text-xxxl)
+
+h1, .text--xxl
+    font-size: var(--text-xxl)
+
+h2, .text--xl
+    font-size: var(--text-xl)
+
+h3, .text--lg
+    font-size: var(--text-lg)
+
+h4, .text--md
+    font-size: var(--text-md)
+
+.text--sm, small
+    font-size: var(--text-sm)
+
+.text--xs
+    font-size: var(--text-xs)
+
+p
+    line-height: var(--body-line-height)
+
+main
+    padding: var(--component-padding)
+    flex-grow: 1
+
+footer
+    font-size: var(--text-xs)
+    +u.flexCenter(column)
+    padding: var(--component-padding)
+    .all_rights
+        text-align: center
+        margin-top: var(--space-xs)
+    .vl
+        border-left: 1px solid var(--color-text)
+        margin-left: 4px
+        height: 100%
+
+.code
+    display: block
+    overflow: auto
+    white-space: pre
+    padding: var(--space-md)
+    background: var(--color-code)
+    border-radius: var(--radius)

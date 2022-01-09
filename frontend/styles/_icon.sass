@@ -1,0 +1,30 @@
+@use 'utils' as u
+
+:root
+    --color-icon-primary: var(--gray-4)
+    --color-icon-secondary: inherit
+
+.icon
+    --size: 1.2em
+    display: inline-block
+    color: inherit // icons inherit the text color
+    fill: currentColor
+    height: var(--size)
+    width: var(--size)
+    line-height: 1
+    flex-shrink: 0
+    max-width: initial
+    @include gt-sm
+        --size: 1.6em
+
+.icon_margin
+    margin-right: var(--space-xxxs)
+
+.icon_ExtraSmall
+    --size: 0.8em
+.icon_Small
+    --size: 1.2em
+.icon_Medium
+    --size: 1.3em
+.icon_Large
+    --size: 1.5em

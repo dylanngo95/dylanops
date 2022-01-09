@@ -1,0 +1,115 @@
+@use 'utils' as u
+
+:root
+    --btn-primary-bg: var(--color-primary)
+    --btn-primary-hover: var(--color-primary-light)
+    --btn-primary-active: var(--color-primary-dark)
+    --btn-primary-label: var(--color-button-text)
+    --btn-primary-label-hover: var(--color-button-text-hover)
+
+    --btn-secondary-bg: var(--gray-1)
+    --btn-secondary-active: var(--gray-2)
+    --btn-secondary-label: var(--gray-10)
+
+    --btn-accent-bg: var(--color-accent)
+    --btn-accent-hover: var(--color-accent-light)
+    --btn-accent-active: var(--color-accent-dark)
+    --btn-accent-label: var(--white)
+
+    --btn-disabled-bg: var(--gray-2)
+    --btn-disabled-label: var(--gray-10)
+
+    --btn-font-size: 1em
+    --btn-radius: var(--radius)
+
+    --btn-sm: calc(var(--btn-font-size) - 0.2em)
+    --btn-md: calc(var(--btn-font-size) + 0.2em)
+    --btn-lg: calc(var(--btn-font-size) + 0.4em)
+
+.btn
+    display: inline-flex
+    align-items: center
+    position: relative
+    margin: 5px
+    white-space: nowrap
+    text-decoration: none
+    line-height: 1
+    padding: var(--space-xs) var(--space-sm)
+    border: 1px
+    border-radius: var(--btn-radius)
+    font-size: var(--btn-font-size)
+    color: var(--color-link)
+
+    transition: .2s
+
+    &:active
+        transition: none
+
+    .icon
+        color: inherit
+        flex-shrink: 0
+        margin-right: var(--space-xxxs)
+
+.btn-primary
+    // main button
+    background-color: var(--btn-primary-bg)
+    color: var(--btn-primary-label)
+    +u.fontSmooth
+
+    &:visited
+        color: var(--btn-primary-label)
+
+    &:hover
+        background-color: var(--btn-primary-hover)
+        color: var(--btn-primary-label-hover)
+
+    &:active
+        background-color: var(--btn-primary-active)
+
+.btn-secondary
+    background-color: var(--btn-secondary-bg)
+    color: var(--btn-secondary-label)
+
+    &:visited
+        color: var(--btn-secondary-label)
+
+    &:active
+        background-color: var(--btn-secondary-active)
+
+.btn-accent
+    background-color: var(--btn-accent-bg)
+    color: var(--btn-accent-label)
+    +u.fontSmooth
+
+    &:visited
+        color: var(--btn-accent-label)
+
+    &:hover
+        background-color: var(--btn-accent-hover)
+
+    &:active
+        background-color: var(--btn-accent-active)
+
+.btn-sm
+    font-size: var(--btn-sm)
+
+.btn-md
+    font-size: var(--btn-md)
+
+.btn-lg
+    font-size: var(--btn-lg)
+
+/*for using row of btns with auto margins!/*
+.btns
+    display: flex
+    flex-wrap: wrap
+    justify-content: center
+    margin-bottom: calc(-1 * var(--space-xs))
+
+    > *
+        margin-right: var(--space-xs)
+        margin-bottom: var(--space-xs)
+
+.button_span
+    +u.flexCenter()
+    justify-content: space-between

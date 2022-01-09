@@ -1,0 +1,29 @@
+.project_list
+    display: flex
+    flex-direction: column
+
+.project_description
+    width: 100%
+
+.project_item
+    color: var(--color-text)
+    display: flex
+    flex-direction: row
+    justify-content: space-between
+    align-items: center
+    padding: var(--space-xs)
+    margin: var(--space-xs)
+    border: 1px solid transparent
+    border-radius: var(--btn-radius)
+    border: 1px solid var(--color-primary)
+    @include lt-sm
+        flex-direction: column
+
+.project_item_links_container
+    display: flex
+    justify-content: flex-end
+
+.project_name
+    font-weight: 800
+    text-decoration: underline
+    margin-bottom: 5px

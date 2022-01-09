@@ -1,0 +1,31 @@
+=flexCenter($direction: row)
+    display: flex
+    align-items: center
+    justify-content: center
+    flex-direction: $direction
+
+.w-full
+    width: 100%
+
+.truncate
+    // truncate text if it exceeds parent
+    overflow: hidden
+    text-overflow: ellipsis
+    white-space: nowrap
+
+=fontSmooth($value: true)
+    @if ($value == true)
+        -moz-osx-font-smoothing: grayscale
+        -webkit-font-smoothing: antialiased
+    @else
+        -moz-osx-font-smoothing: auto
+        -webkit-font-smoothing: subpixel-antialiased
+
+=fontfacelazyimport($name, $fileprefix, $weight: normal, $style: normal)
+    @font-face
+        font-family: "#{$name}"
+        src: url("./fonts/#{$fileprefix}-#{$weight}.eot")
+        src: url("./fonts/#{$fileprefix}-#{$weight}.eot?#iefix") format("embedded-opentype"), url("./fonts/#{$fileprefix}-#{$weight}.woff2") format("woff2"), url("./fonts/#{$fileprefix}-#{$weight}.woff") format("woff"), url("./fonts/#{$fileprefix}-#{$weight}.ttf") format("truetype"), url("./fonts/#{$fileprefix}-#{$weight}.svg") format("svg")
+        font-weight: $weight
+        font-style: $style
+        font-display: swap

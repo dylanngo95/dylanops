@@ -1,0 +1,75 @@
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" 
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg  id="logo"  xmlns="http://www.w3.org/2000/svg" version="1.1"
+     width="200px" height="200px" viewBox="0 0 11 9" shape-rendering="crispEdges">
+      <!--background rect-->
+      <rect
+        x="0"
+        y="0"
+        width="11"
+        height="9"
+        fill="transparent"
+        stroke="black"
+        stroke-width="0"
+      />
+      <!--path-->
+      <g fill="#2d2d2d" class="logo_primary_fill">
+        <path d="M0,9v-6h1v6 M1,8v-6h1v6 M2,7v-5h2v5 M4,7v-5h1v5" />
+        <path d="M6,7v-7h1v7 M7,7v-6h1v6 M7,7v-5h3v5 M10,6v-3h1v3" />
+      </g>
+      <!--p's space-->
+      <rect x="3" y="3" width="1" height="1" fill="white" class="blinking logo_secondary_fill" />
+      <rect
+        x="3"
+        y="4"
+        width="1"
+        height="1"
+        fill="white"
+        class="blinking_delayed logo_secondary_fill"
+      />
+      <rect
+        class="blinking_delayed logo_secondary_fill"
+        x="3"
+        y="5"
+        width="1"
+        height="1"
+        fill="white"
+      />
+      <rect
+        x="3"
+        y="5.6"
+        width="1"
+        height="0.4"
+        fill="white"
+        class="bottom_eyelid logo_secondary_fill"
+      />
+      <rect x="3" y="3" width="1" height="3" fill="white" class="squint logo_secondary_fill" />
+      <!--b's space-->
+      <rect x="8" y="3" width="1" height="1" fill="white" class="blinking logo_secondary_fill" />
+      <rect
+        x="8"
+        y="4"
+        width="1"
+        height="1"
+        fill="white"
+        class="blinking_delayed logo_secondary_fill"
+      />
+      <rect
+        class="blinking_delayed logo_secondary_fill"
+        x="8"
+        y="5"
+        width="1"
+        height="1"
+        fill="white"
+      />
+
+      <rect
+        x="8"
+        y="5.6"
+        width="1"
+        height="0.4"
+        fill="white"
+        class="bottom_eyelid logo_secondary_fill"
+      />
+      <rect x="8" y="3" width="1" height="3" fill="white" class="squint logo_secondary_fill" />
+</svg>

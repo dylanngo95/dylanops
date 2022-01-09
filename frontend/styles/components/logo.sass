@@ -1,0 +1,38 @@
+
+.logo_primary_fill
+    fill: var(--logo-primary)
+
+.logo_secondary_fill
+    fill: var(--logo-secondary)
+
+.blinking
+    animation: blinking 4s steps(5, start) infinite
+
+    &_delayed
+        animation: blinking 4s steps(5, start) infinite
+        animation-delay: 2ms
+
+#logo
+    color: inherit // icons inherit the text color
+    color: var(--color-text)
+
+#logo:hover .bottom_eyelid
+    display: none
+
+#logo:hover .blinking
+    display: none
+
+#logo:hover .blinking_delayed
+    display: none
+
+#logo:hover .squint
+    display: block
+    animation: squint_in 0.3s forwards
+    transform-origin: center
+
+#svg_container:hover #logo
+    animation: zoom_out 0.3s forwards
+    transform-origin: center
+
+.squint
+    display: none

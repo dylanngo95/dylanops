@@ -1,0 +1,37 @@
+@use '../utils' as u
+
+.art_header_container
+    padding: var(--space-sm)
+    margin-bottom: var(--space-xs)
+    border: 1px solid var(--color-primary)
+    border-radius: var(--btn-radius)
+
+.art_avatar_container
+    +u.flexCenter(col)
+
+.art_avatar
+    border-radius: 50%
+    border: 1px solid var(--color-primary)
+
+.art_description
+    text-align: center
+    font-size: var(--text-sm)
+
+.art_category
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    padding-top: var(--space-md)
+
+.art_piece_container
+    padding: var(--space-sm)
+    margin-bottom: var(--space-md)
+    justify-content: center
+    width: 90%
+
+.art_piece_name
+    padding: var(--space-xs)
+    margin: var(--space-xs)
+    font-size: var(--text-sm)
+    text-align: center
